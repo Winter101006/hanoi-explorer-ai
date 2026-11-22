@@ -1,0 +1,1520 @@
+[
+  {
+    "id": "QU-01",
+    "group": "QU",
+    "priority": "P0",
+    "split": "development",
+    "input": "Bạn là ai?",
+    "expected": {
+      "route": "general_chat"
+    }
+  },
+  {
+    "id": "QU-02",
+    "group": "QU",
+    "priority": "P0",
+    "split": "development",
+    "input": "Hôm nay có mưa không?",
+    "expected": {
+      "route": "weather_query"
+    }
+  },
+  {
+    "id": "QU-03",
+    "group": "QU",
+    "priority": "P0",
+    "split": "development",
+    "input": "Tôi muốn đi nhà nghỉ",
+    "expected": {
+      "route": "lodging"
+    }
+  },
+  {
+    "id": "QU-04",
+    "group": "QU",
+    "priority": "P0",
+    "split": "holdout",
+    "input": "Tìm bida gần HUS",
+    "expected": {
+      "intent": "clarification"
+    }
+  },
+  {
+    "id": "QU-05",
+    "group": "QU",
+    "priority": "P0",
+    "split": "development",
+    "input": "Tôi muốn ăn cháo",
+    "expected": {
+      "hard_constraints": [
+        "dish:cháo"
+      ]
+    }
+  },
+  {
+    "id": "QU-06",
+    "group": "QU",
+    "priority": "P1",
+    "split": "development",
+    "input": "Tìm cháo sườn ở Hà Nội",
+    "expected": {
+      "hard_constraints": [
+        "dish:cháo sườn"
+      ]
+    }
+  },
+  {
+    "id": "QU-07",
+    "group": "QU",
+    "priority": "P1",
+    "split": "development",
+    "input": "Tôi muốn ăn phở bò",
+    "expected": {
+      "hard_constraints": [
+        "dish:phở bò"
+      ]
+    }
+  },
+  {
+    "id": "QU-08",
+    "group": "QU",
+    "priority": "P1",
+    "split": "holdout",
+    "input": "Tìm bún chả ở Cầu Giấy",
+    "expected": {
+      "location": "Cầu Giấy"
+    }
+  },
+  {
+    "id": "QU-09",
+    "group": "QU",
+    "priority": "P1",
+    "split": "development",
+    "input": "Ăn ramen miso dưới 80k",
+    "expected": {
+      "budget_max": 80000
+    }
+  },
+  {
+    "id": "QU-10",
+    "group": "QU",
+    "priority": "P1",
+    "split": "development",
+    "input": "Tìm món bánh cuốn",
+    "expected": {
+      "hard_constraints": [
+        "dish:bánh cuốn"
+      ]
+    }
+  },
+  {
+    "id": "QU-11",
+    "group": "QU",
+    "priority": "P1",
+    "split": "development",
+    "input": "Trời đang mưa, tìm chỗ đi chơi",
+    "expected": {
+      "weather": "mưa"
+    }
+  },
+  {
+    "id": "QU-12",
+    "group": "QU",
+    "priority": "P1",
+    "split": "holdout",
+    "input": "Nắng nóng, tìm nơi mát mẻ",
+    "expected": {
+      "weather": "nắng nóng"
+    }
+  },
+  {
+    "id": "QU-13",
+    "group": "QU",
+    "priority": "P1",
+    "split": "development",
+    "input": "Trời lạnh, tìm quán cafe",
+    "expected": {
+      "weather_source": "user"
+    }
+  },
+  {
+    "id": "QU-14",
+    "group": "QU",
+    "priority": "P1",
+    "split": "development",
+    "input": "Tìm quán trong nhà",
+    "expected": {
+      "setting": "indoor"
+    }
+  },
+  {
+    "id": "QU-15",
+    "group": "QU",
+    "priority": "P1",
+    "split": "development",
+    "input": "Đi dạo ngoài trời",
+    "expected": {
+      "setting": "outdoor"
+    }
+  },
+  {
+    "id": "QU-16",
+    "group": "QU",
+    "priority": "P2",
+    "split": "holdout",
+    "input": "Cafe ở Hà Đông",
+    "expected": {
+      "category": "ca-phe"
+    }
+  },
+  {
+    "id": "QU-17",
+    "group": "QU",
+    "priority": "P2",
+    "split": "development",
+    "input": "Tìm phở bò phố cổ",
+    "expected": {
+      "hard_constraints": [
+        "dish:phở bò",
+        "area:phố cổ"
+      ]
+    }
+  },
+  {
+    "id": "QU-18",
+    "group": "QU",
+    "priority": "P2",
+    "split": "development",
+    "input": "Tôi đi với 3 người bạn",
+    "expected": {
+      "party_size": 4
+    }
+  },
+  {
+    "id": "QU-19",
+    "group": "QU",
+    "priority": "P2",
+    "split": "development",
+    "input": "Tôi đi một mình",
+    "expected": {
+      "party_size": 1
+    }
+  },
+  {
+    "id": "QU-20",
+    "group": "QU",
+    "priority": "P2",
+    "split": "holdout",
+    "input": "Tìm cafe ở Cầu Giấy giá dưới 50.000đ",
+    "expected": {
+      "budget_max": 50000
+    }
+  },
+  {
+    "id": "QU-21",
+    "group": "QU",
+    "priority": "P2",
+    "split": "development",
+    "input": "Cảm ơn bạn nhé!",
+    "expected": {
+      "route": "thanks"
+    }
+  },
+  {
+    "id": "QU-22",
+    "group": "QU",
+    "priority": "P2",
+    "split": "development",
+    "input": "Giải phương trình bậc hai",
+    "expected": {
+      "route": "out_of_scope"
+    }
+  },
+  {
+    "id": "QU-23",
+    "group": "QU",
+    "priority": "P2",
+    "split": "development",
+    "input": "Tôi muốn ăn lẩu",
+    "expected": {
+      "hard_constraints": [
+        "dish:lẩu"
+      ]
+    }
+  },
+  {
+    "id": "QU-24",
+    "group": "QU",
+    "priority": "P2",
+    "split": "holdout",
+    "input": "Tìm bảo tàng ở Đống Đa",
+    "expected": {
+      "category": "di-tich"
+    }
+  },
+  {
+    "id": "QU-25",
+    "group": "QU",
+    "priority": "P2",
+    "split": "development",
+    "input": "Tìm chỗ chơi bida",
+    "expected": {
+      "hard_constraints": [
+        "activity:bida"
+      ]
+    }
+  },
+  {
+    "id": "RT-01",
+    "group": "RT",
+    "priority": "P0",
+    "split": "development",
+    "input": "Tìm Nhà tù Hỏa Lò",
+    "category": "di-tich",
+    "district": "Hoàn Kiếm",
+    "expected": {
+      "target": "hn_loc_1417",
+      "label_status": "source_name_verified",
+      "exhaustive": true
+    }
+  },
+  {
+    "id": "RT-02",
+    "group": "RT",
+    "priority": "P0",
+    "split": "development",
+    "input": "Tìm Văn Miếu Quốc Tử Giám",
+    "category": "tam-linh",
+    "district": "Đống Đa",
+    "expected": {
+      "target": "hn_loc_1400",
+      "label_status": "source_name_verified",
+      "exhaustive": true
+    }
+  },
+  {
+    "id": "RT-03",
+    "group": "RT",
+    "priority": "P0",
+    "split": "development",
+    "input": "Tìm Bảo tàng Dân tộc học Việt Nam",
+    "category": "di-tich",
+    "district": "Cầu Giấy",
+    "expected": {
+      "target": "hn_loc_1420",
+      "label_status": "source_name_verified",
+      "exhaustive": true
+    }
+  },
+  {
+    "id": "RT-04",
+    "group": "RT",
+    "priority": "P0",
+    "split": "holdout",
+    "input": "Phở Gia Truyền Bát Đàn",
+    "category": "an-uong",
+    "district": "Hoàn Kiếm",
+    "expected": {
+      "target": "hn_loc_1009",
+      "label_status": "source_name_verified",
+      "exhaustive": true
+    }
+  },
+  {
+    "id": "RT-05",
+    "group": "RT",
+    "priority": "P0",
+    "split": "development",
+    "input": "Quán Cháo Gà Bà Mỹ",
+    "category": "an-uong",
+    "district": "Hoàn Kiếm",
+    "expected": {
+      "target": "hn_loc_955",
+      "label_status": "source_name_verified",
+      "exhaustive": true
+    }
+  },
+  {
+    "id": "RT-06",
+    "group": "RT",
+    "priority": "P1",
+    "split": "development",
+    "input": "Cháo Sườn Cô Là",
+    "category": "an-uong",
+    "district": "Hoàn Kiếm",
+    "expected": {
+      "target": "hn_loc_976",
+      "label_status": "source_name_verified",
+      "exhaustive": true
+    }
+  },
+  {
+    "id": "RT-07",
+    "group": "RT",
+    "priority": "P1",
+    "split": "development",
+    "input": "Cháo lòng 88 Thuốc Bắc",
+    "category": "an-uong",
+    "district": "Hoàn Kiếm",
+    "expected": {
+      "target": "hn_loc_974",
+      "label_status": "source_name_verified",
+      "exhaustive": false
+    }
+  },
+  {
+    "id": "RT-08",
+    "group": "RT",
+    "priority": "P1",
+    "split": "holdout",
+    "input": "Quán cháo lòng và bún đậu phố Thuốc Bắc",
+    "category": "an-uong",
+    "district": "Hoàn Kiếm",
+    "expected": {
+      "target": "hn_loc_972",
+      "label_status": "source_name_verified",
+      "exhaustive": false
+    }
+  },
+  {
+    "id": "RT-09",
+    "group": "RT",
+    "priority": "P1",
+    "split": "development",
+    "input": "Lẩu Đức Trọc Dịch Vọng Hậu",
+    "category": "an-uong",
+    "district": "Cầu Giấy",
+    "expected": {
+      "target": "hn_loc_304",
+      "label_status": "source_name_verified",
+      "exhaustive": true
+    }
+  },
+  {
+    "id": "RT-10",
+    "group": "RT",
+    "priority": "P1",
+    "split": "development",
+    "input": "Tìm Lẩu Đức Trọc ở Long Biên có lẩu cháo chim",
+    "category": "an-uong",
+    "district": "Long Biên",
+    "expected": {
+      "target": "hn_loc_1134",
+      "label_status": "source_name_verified",
+      "exhaustive": false
+    }
+  },
+  {
+    "id": "RT-11",
+    "group": "RT",
+    "priority": "P1",
+    "split": "development",
+    "input": "Đi dạo ở Hồ Bảy Mẫu",
+    "category": "ngoai-troi",
+    "district": "Hai Bà Trưng",
+    "expected": {
+      "target": "hn_loc_1557",
+      "label_status": "source_name_verified",
+      "exhaustive": false
+    }
+  },
+  {
+    "id": "RT-12",
+    "group": "RT",
+    "priority": "P1",
+    "split": "holdout",
+    "input": "Rạp Beta Cinemas Thanh Xuân",
+    "category": "giai-tri",
+    "district": "Thanh Xuân",
+    "expected": {
+      "target": "hn_loc_1562",
+      "label_status": "source_name_verified",
+      "exhaustive": true
+    }
+  },
+  {
+    "id": "RT-13",
+    "group": "RT",
+    "priority": "P1",
+    "split": "development",
+    "input": "Cơ sở giam giữ Hỏa Lò",
+    "category": "di-tich",
+    "district": "Hoàn Kiếm",
+    "expected": {
+      "target": "hn_loc_1417",
+      "label_status": "source_name_verified",
+      "exhaustive": true
+    }
+  },
+  {
+    "id": "RT-14",
+    "group": "RT",
+    "priority": "P1",
+    "split": "development",
+    "input": "Thăm Quốc Tử Giám",
+    "category": "tam-linh",
+    "district": "Đống Đa",
+    "expected": {
+      "target": "hn_loc_1400",
+      "label_status": "source_name_verified",
+      "exhaustive": true
+    }
+  },
+  {
+    "id": "RT-15",
+    "group": "RT",
+    "priority": "P1",
+    "split": "development",
+    "input": "Đi xem trưng bày dân tộc học",
+    "category": "di-tich",
+    "district": "Cầu Giấy",
+    "expected": {
+      "target": "hn_loc_1420",
+      "label_status": "source_name_verified",
+      "exhaustive": false
+    }
+  },
+  {
+    "id": "RT-16",
+    "group": "RT",
+    "priority": "P2",
+    "split": "holdout",
+    "input": "Ăn cháo gà ở quán Bà Mỹ",
+    "category": "an-uong",
+    "district": "Hoàn Kiếm",
+    "expected": {
+      "target": "hn_loc_955",
+      "label_status": "source_name_verified",
+      "exhaustive": true
+    }
+  },
+  {
+    "id": "RT-17",
+    "group": "RT",
+    "priority": "P2",
+    "split": "development",
+    "input": "Mua cháo sườn chỗ cô Là",
+    "category": "an-uong",
+    "district": "Hoàn Kiếm",
+    "expected": {
+      "target": "hn_loc_976",
+      "label_status": "source_name_verified",
+      "exhaustive": true
+    }
+  },
+  {
+    "id": "RT-18",
+    "group": "RT",
+    "priority": "P2",
+    "split": "development",
+    "input": "Xem phim tại rạp Beta",
+    "category": "giai-tri",
+    "district": "Thanh Xuân",
+    "expected": {
+      "target": "hn_loc_1562",
+      "label_status": "source_name_verified",
+      "exhaustive": false
+    }
+  },
+  {
+    "id": "RT-19",
+    "group": "RT",
+    "priority": "P2",
+    "split": "development",
+    "input": "Quán ăn ở Cầu Giấy",
+    "category": "an-uong",
+    "district": "Cầu Giấy",
+    "expected": {
+      "target": null,
+      "label_status": "human_review",
+      "exhaustive": false
+    }
+  },
+  {
+    "id": "RT-20",
+    "group": "RT",
+    "priority": "P2",
+    "split": "holdout",
+    "input": "Không có quán món zzzqax tại Hà Nội",
+    "category": "an-uong",
+    "district": null,
+    "expected": {
+      "target": null,
+      "label_status": "no_match",
+      "exhaustive": false
+    }
+  },
+  {
+    "id": "CR-01",
+    "group": "CR",
+    "priority": "P0",
+    "split": "development",
+    "input": "Ăn cháo",
+    "expected": {
+      "ids": [
+        "porridge",
+        "rib"
+      ]
+    }
+  },
+  {
+    "id": "CR-02",
+    "group": "CR",
+    "priority": "P0",
+    "split": "development",
+    "input": "Ăn cháo sườn",
+    "expected": {
+      "ids": [
+        "rib"
+      ]
+    }
+  },
+  {
+    "id": "CR-03",
+    "group": "CR",
+    "priority": "P0",
+    "split": "development",
+    "input": "Ăn phở bò",
+    "expected": {
+      "ids": [
+        "beef"
+      ]
+    }
+  },
+  {
+    "id": "CR-04",
+    "group": "CR",
+    "priority": "P0",
+    "split": "holdout",
+    "input": "Ăn bún chả",
+    "expected": {
+      "ids": [
+        "grill"
+      ]
+    }
+  },
+  {
+    "id": "CR-05",
+    "group": "CR",
+    "priority": "P0",
+    "split": "development",
+    "input": "Ăn món xyzqax",
+    "expected": {
+      "ids": []
+    }
+  },
+  {
+    "id": "CR-06",
+    "group": "CR",
+    "priority": "P1",
+    "split": "development",
+    "input": "Tìm quán ăn ở Cầu Giấy",
+    "expected": {
+      "ids": [
+        "porridge",
+        "rib",
+        "beef",
+        "chicken",
+        "grill",
+        "tofu"
+      ]
+    }
+  },
+  {
+    "id": "CR-07",
+    "group": "CR",
+    "priority": "P1",
+    "split": "development",
+    "input": "Tìm quán ăn ở Tây Hồ",
+    "expected": {
+      "ids": [
+        "hotpot"
+      ]
+    }
+  },
+  {
+    "id": "CR-08",
+    "group": "CR",
+    "priority": "P1",
+    "split": "holdout",
+    "input": "Ăn lẩu",
+    "expected": {
+      "ids": [
+        "hotpot"
+      ]
+    }
+  },
+  {
+    "id": "CR-09",
+    "group": "CR",
+    "priority": "P1",
+    "split": "development",
+    "input": "Ăn bánh cuốn",
+    "expected": {
+      "ids": []
+    }
+  },
+  {
+    "id": "CR-10",
+    "group": "CR",
+    "priority": "P1",
+    "split": "development",
+    "input": "Ăn phở gà",
+    "expected": {
+      "ids": [
+        "chicken"
+      ]
+    }
+  },
+  {
+    "id": "CR-11",
+    "group": "CR",
+    "priority": "P1",
+    "split": "development",
+    "input": "Ăn cháo dưới 45k",
+    "expected": {
+      "ids": [
+        "porridge"
+      ]
+    }
+  },
+  {
+    "id": "CR-12",
+    "group": "CR",
+    "priority": "P1",
+    "split": "holdout",
+    "input": "Ăn cháo dưới 20k",
+    "expected": {
+      "ids": []
+    }
+  },
+  {
+    "id": "CR-13",
+    "group": "CR",
+    "priority": "P1",
+    "split": "development",
+    "input": "Ăn cháo ở Tây Hồ",
+    "expected": {
+      "ids": []
+    }
+  },
+  {
+    "id": "CR-14",
+    "group": "CR",
+    "priority": "P1",
+    "split": "development",
+    "input": "Ăn cháo ở Cầu Giấy",
+    "expected": {
+      "ids": [
+        "porridge",
+        "rib"
+      ]
+    }
+  },
+  {
+    "id": "CR-15",
+    "group": "CR",
+    "priority": "P1",
+    "split": "development",
+    "input": "Trời mưa, ăn cháo",
+    "expected": {
+      "ids": [
+        "porridge",
+        "rib"
+      ]
+    }
+  },
+  {
+    "id": "CR-16",
+    "group": "CR",
+    "priority": "P2",
+    "split": "holdout",
+    "input": "Tìm chỗ đi dạo ngoài trời",
+    "expected": {
+      "ids": [
+        "park"
+      ]
+    }
+  },
+  {
+    "id": "CR-17",
+    "group": "CR",
+    "priority": "P2",
+    "split": "development",
+    "input": "Trời mưa, tìm chỗ đi chơi",
+    "expected": {
+      "ids": [
+        "cinema"
+      ]
+    }
+  },
+  {
+    "id": "CR-18",
+    "group": "CR",
+    "priority": "P2",
+    "split": "development",
+    "input": "Trời mưa vẫn muốn đi dạo ngoài trời",
+    "expected": {
+      "ids": [
+        "park"
+      ]
+    }
+  },
+  {
+    "id": "CR-19",
+    "group": "CR",
+    "priority": "P2",
+    "split": "development",
+    "input": "Tìm chỗ chơi bida",
+    "expected": {
+      "ids": [
+        "pool"
+      ]
+    }
+  },
+  {
+    "id": "CR-20",
+    "group": "CR",
+    "priority": "P2",
+    "split": "holdout",
+    "input": "Tìm quán ăn dưới 35k",
+    "expected": {
+      "ids": [
+        "porridge"
+      ]
+    }
+  },
+  {
+    "id": "CR-21",
+    "group": "CR",
+    "priority": "P2",
+    "split": "development",
+    "input": "Tìm cafe dưới 50k",
+    "expected": {
+      "ids": [
+        "cafe"
+      ]
+    }
+  },
+  {
+    "id": "CR-22",
+    "group": "CR",
+    "priority": "P2",
+    "split": "development",
+    "input": "Tìm cafe ở Tây Hồ",
+    "expected": {
+      "ids": []
+    }
+  },
+  {
+    "id": "CR-23",
+    "group": "CR",
+    "priority": "P2",
+    "split": "development",
+    "input": "Tìm cafe dưới 15k",
+    "expected": {
+      "ids": []
+    }
+  },
+  {
+    "id": "CR-24",
+    "group": "CR",
+    "priority": "P2",
+    "split": "holdout",
+    "input": "Trời lạnh, tìm cafe",
+    "expected": {
+      "ids": [
+        "cafe"
+      ]
+    }
+  },
+  {
+    "id": "CR-25",
+    "group": "CR",
+    "priority": "P2",
+    "split": "development",
+    "input": "Trời nắng nóng, tìm nơi mát mẻ",
+    "expected": {
+      "ids": [
+        "porridge",
+        "rib",
+        "beef",
+        "chicken",
+        "grill",
+        "tofu",
+        "hotpot",
+        "cinema",
+        "pool",
+        "cafe"
+      ]
+    }
+  },
+  {
+    "id": "CM-01",
+    "group": "CM",
+    "priority": "P0",
+    "split": "development",
+    "input": [
+      "Cafe Cầu Giấy dưới 50k",
+      "Yên tĩnh hơn"
+    ],
+    "expected": {
+      "budget_max": 50000
+    }
+  },
+  {
+    "id": "CM-02",
+    "group": "CM",
+    "priority": "P0",
+    "split": "development",
+    "input": [
+      "Tìm bida gần HUS",
+      "Nguyễn Trãi"
+    ],
+    "expected": {
+      "hard_constraints": [
+        "activity:bida"
+      ]
+    }
+  },
+  {
+    "id": "CM-03",
+    "group": "CM",
+    "priority": "P0",
+    "split": "development",
+    "input": [
+      "Tìm bida gần HUS",
+      "Bạn là ai?",
+      "Nguyễn Trãi"
+    ],
+    "expected": {
+      "location": "Thanh Xuân"
+    }
+  },
+  {
+    "id": "CM-04",
+    "group": "CM",
+    "priority": "P0",
+    "split": "holdout",
+    "input": [
+      "Ăn cháo ở Cầu Giấy",
+      "Thế còn cháo gà?"
+    ],
+    "expected": {
+      "hard_constraints": [
+        "dish:cháo gà"
+      ]
+    }
+  },
+  {
+    "id": "CM-05",
+    "group": "CM",
+    "priority": "P0",
+    "split": "development",
+    "input": [
+      "Trời mưa, tìm chỗ đi chơi",
+      "Có chỗ nào khác không?"
+    ],
+    "expected": {
+      "weather": "mưa"
+    }
+  },
+  {
+    "id": "CM-06",
+    "group": "CM",
+    "priority": "P1",
+    "split": "development",
+    "input": [
+      "Cafe Cầu Giấy",
+      "Ở Tây Hồ"
+    ],
+    "expected": {
+      "location": "Tây Hồ"
+    }
+  },
+  {
+    "id": "CM-07",
+    "group": "CM",
+    "priority": "P1",
+    "split": "development",
+    "input": [
+      "Cafe dưới 50k",
+      "Dưới 30k"
+    ],
+    "expected": {
+      "budget_max": 30000
+    }
+  },
+  {
+    "id": "CM-08",
+    "group": "CM",
+    "priority": "P1",
+    "split": "holdout",
+    "input": [
+      "Cafe dưới 50k",
+      "Không giới hạn giá"
+    ],
+    "expected": {
+      "budget_max": null
+    }
+  },
+  {
+    "id": "CM-09",
+    "group": "CM",
+    "priority": "P1",
+    "split": "development",
+    "input": [
+      "Cafe Cầu Giấy",
+      "Bắt đầu lại"
+    ],
+    "expected": {
+      "location": null
+    }
+  },
+  {
+    "id": "CM-10",
+    "group": "CM",
+    "priority": "P1",
+    "split": "development",
+    "input": [
+      "Tôi đi một mình",
+      "Tìm quán cafe"
+    ],
+    "expected": {
+      "party_size": 1
+    }
+  },
+  {
+    "id": "CM-11",
+    "group": "CM",
+    "priority": "P1",
+    "split": "development",
+    "input": [
+      "Cafe",
+      "Tôi đi với 3 người bạn"
+    ],
+    "expected": {
+      "party_size": 4
+    }
+  },
+  {
+    "id": "CM-12",
+    "group": "CM",
+    "priority": "P1",
+    "split": "holdout",
+    "input": [
+      "Ăn cháo ở Cầu Giấy dưới 60k",
+      "Thế còn cháo sườn?"
+    ],
+    "expected": {
+      "budget_max": 60000
+    }
+  },
+  {
+    "id": "CM-13",
+    "group": "CM",
+    "priority": "P1",
+    "split": "development",
+    "input": [
+      "Tìm phở bò phố cổ",
+      "Ở Cầu Giấy"
+    ],
+    "expected": {
+      "hard_constraints": [
+        "dish:phở bò"
+      ]
+    }
+  },
+  {
+    "id": "CM-14",
+    "group": "CM",
+    "priority": "P1",
+    "split": "development",
+    "input": [
+      "Trời mưa, đi chơi",
+      "Tạnh mưa rồi, tìm chỗ đi chơi"
+    ],
+    "expected": {
+      "weather": null
+    }
+  },
+  {
+    "id": "CM-15",
+    "group": "CM",
+    "priority": "P1",
+    "split": "development",
+    "input": [
+      "Cafe Cầu Giấy",
+      "Cảm ơn bạn nhé!"
+    ],
+    "expected": {
+      "location": "Cầu Giấy"
+    }
+  },
+  {
+    "id": "CM-16",
+    "group": "CM",
+    "priority": "P2",
+    "split": "holdout",
+    "input": [
+      "Tìm cafe gần HUS dưới 50k",
+      "Lê Thánh Tông"
+    ],
+    "expected": {
+      "budget_max": 50000
+    }
+  },
+  {
+    "id": "CM-17",
+    "group": "CM",
+    "priority": "P2",
+    "split": "development",
+    "input": [
+      "Tìm chỗ đi dạo ngoài trời",
+      "Chỉ tìm trong nhà"
+    ],
+    "expected": {
+      "setting": "indoor"
+    }
+  },
+  {
+    "id": "CM-18",
+    "group": "CM",
+    "priority": "P2",
+    "split": "development",
+    "input": [
+      "Ăn cháo",
+      "Cafe ở Cầu Giấy"
+    ],
+    "expected": {
+      "hard_constraints": []
+    }
+  },
+  {
+    "id": "CM-19",
+    "group": "CM",
+    "priority": "P2",
+    "split": "development",
+    "input": [
+      "Cafe Cầu Giấy",
+      "Hôm nay có mưa không?"
+    ],
+    "expected": {
+      "location": "Cầu Giấy"
+    }
+  },
+  {
+    "id": "CM-20",
+    "group": "CM",
+    "priority": "P2",
+    "split": "holdout",
+    "input": [
+      "Ăn lẩu Tây Hồ",
+      "Bạn là ai?"
+    ],
+    "expected": {
+      "hard_constraints": [
+        "dish:lẩu"
+      ]
+    }
+  },
+  {
+    "id": "GG-01",
+    "group": "GG",
+    "priority": "P0",
+    "split": "development",
+    "input": "Tìm cafe Cầu Giấy",
+    "mode": "unknown_id",
+    "expected": {
+      "source": "fallback"
+    }
+  },
+  {
+    "id": "GG-02",
+    "group": "GG",
+    "priority": "P0",
+    "split": "development",
+    "input": "Tìm cafe Cầu Giấy",
+    "mode": "missing_answer",
+    "expected": {
+      "source": "fallback"
+    }
+  },
+  {
+    "id": "GG-03",
+    "group": "GG",
+    "priority": "P0",
+    "split": "development",
+    "input": "Tìm cafe Cầu Giấy",
+    "mode": "network",
+    "expected": {
+      "source": "fallback"
+    }
+  },
+  {
+    "id": "GG-04",
+    "group": "GG",
+    "priority": "P0",
+    "split": "holdout",
+    "input": "Tìm cafe Cầu Giấy",
+    "mode": "jargon",
+    "expected": {
+      "source": "fallback"
+    }
+  },
+  {
+    "id": "GG-05",
+    "group": "GG",
+    "priority": "P0",
+    "split": "development",
+    "input": "Tìm cafe Cầu Giấy",
+    "mode": "unsupported_party",
+    "expected": {
+      "source": "fallback"
+    }
+  },
+  {
+    "id": "GG-06",
+    "group": "GG",
+    "priority": "P1",
+    "split": "development",
+    "input": "Tìm cafe Cầu Giấy",
+    "mode": "unsupported_relationship",
+    "expected": {
+      "source": "fallback"
+    }
+  },
+  {
+    "id": "GG-07",
+    "group": "GG",
+    "priority": "P1",
+    "split": "development",
+    "input": "Tìm cafe Cầu Giấy",
+    "mode": "duplicate_question",
+    "expected": {
+      "source": "gemini"
+    }
+  },
+  {
+    "id": "GG-08",
+    "group": "GG",
+    "priority": "P1",
+    "split": "holdout",
+    "input": "Tìm cafe Cầu Giấy",
+    "mode": "valid",
+    "expected": {
+      "source": "gemini"
+    }
+  },
+  {
+    "id": "GG-09",
+    "group": "GG",
+    "priority": "P1",
+    "split": "development",
+    "input": "Tìm cafe Cầu Giấy",
+    "mode": "empty_answer",
+    "expected": {
+      "source": "fallback"
+    }
+  },
+  {
+    "id": "GG-10",
+    "group": "GG",
+    "priority": "P1",
+    "split": "development",
+    "input": "Tìm cafe Cầu Giấy",
+    "mode": "wrong_type",
+    "expected": {
+      "source": "fallback"
+    }
+  },
+  {
+    "id": "GG-11",
+    "group": "GG",
+    "priority": "P1",
+    "split": "development",
+    "input": "Tìm cafe Cầu Giấy",
+    "mode": "extra_field",
+    "expected": {
+      "source": "fallback"
+    }
+  },
+  {
+    "id": "GG-12",
+    "group": "GG",
+    "priority": "P1",
+    "split": "holdout",
+    "input": "Tìm cafe Cầu Giấy",
+    "mode": "id_in_prose",
+    "expected": {
+      "source": "gemini"
+    }
+  },
+  {
+    "id": "GG-13",
+    "group": "GG",
+    "priority": "P1",
+    "split": "development",
+    "input": "Tìm quán cháo sườn",
+    "mode": "live",
+    "expected": {
+      "source": "gemini"
+    }
+  },
+  {
+    "id": "GG-14",
+    "group": "GG",
+    "priority": "P1",
+    "split": "development",
+    "input": "Trời mưa, tìm chỗ đi chơi",
+    "mode": "live",
+    "expected": {
+      "source": "gemini"
+    }
+  },
+  {
+    "id": "GG-15",
+    "group": "GG",
+    "priority": "P1",
+    "split": "development",
+    "input": "Tìm quán phở bò Hoàn Kiếm",
+    "mode": "live",
+    "expected": {
+      "source": "gemini"
+    }
+  },
+  {
+    "id": "AR-01",
+    "group": "AR",
+    "priority": "P0",
+    "split": "development",
+    "input": {
+      "method": "POST",
+      "path": "/api/chat",
+      "payload": []
+    },
+    "expected": {
+      "status": 400
+    }
+  },
+  {
+    "id": "AR-02",
+    "group": "AR",
+    "priority": "P0",
+    "split": "development",
+    "input": {
+      "method": "POST",
+      "path": "/api/chat",
+      "payload": {
+        "message": 42
+      }
+    },
+    "expected": {
+      "status": 400
+    }
+  },
+  {
+    "id": "AR-03",
+    "group": "AR",
+    "priority": "P0",
+    "split": "development",
+    "input": {
+      "method": "POST",
+      "path": "/api/chat",
+      "payload": {
+        "message": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      }
+    },
+    "expected": {
+      "status": 400
+    }
+  },
+  {
+    "id": "AR-04",
+    "group": "AR",
+    "priority": "P0",
+    "split": "holdout",
+    "input": {
+      "method": "POST",
+      "path": "/api/chat",
+      "payload": {
+        "session_id": " "
+      }
+    },
+    "expected": {
+      "status": 400
+    }
+  },
+  {
+    "id": "AR-05",
+    "group": "AR",
+    "priority": "P0",
+    "split": "development",
+    "input": {
+      "method": "POST",
+      "path": "/api/chat",
+      "payload": {
+        "history": [
+          {
+            "role": "system",
+            "content": "[synthetic]"
+          }
+        ]
+      }
+    },
+    "expected": {
+      "status": 400
+    }
+  },
+  {
+    "id": "AR-06",
+    "group": "AR",
+    "priority": "P1",
+    "split": "development",
+    "input": {
+      "method": "POST",
+      "path": "/api/chat",
+      "payload": {
+        "category": "invalid"
+      }
+    },
+    "expected": {
+      "status": 400
+    }
+  },
+  {
+    "id": "AR-07",
+    "group": "AR",
+    "priority": "P1",
+    "split": "development",
+    "input": {
+      "method": "POST",
+      "path": "/api/chat",
+      "payload": {
+        "district": 42
+      }
+    },
+    "expected": {
+      "status": 400
+    }
+  },
+  {
+    "id": "AR-08",
+    "group": "AR",
+    "priority": "P1",
+    "split": "holdout",
+    "input": {
+      "method": "POST",
+      "path": "/api/chat",
+      "payload": {
+        "history": {}
+      }
+    },
+    "expected": {
+      "status": 400
+    }
+  },
+  {
+    "id": "AR-09",
+    "group": "AR",
+    "priority": "P1",
+    "split": "development",
+    "input": {
+      "method": "POST",
+      "path": "/api/chat",
+      "payload": {
+        "budget": 42
+      }
+    },
+    "expected": {
+      "status": 400
+    }
+  },
+  {
+    "id": "AR-10",
+    "group": "AR",
+    "priority": "P1",
+    "split": "development",
+    "input": {
+      "method": "GET",
+      "path": "/api/weather",
+      "payload": null
+    },
+    "expected": {
+      "status": 200
+    }
+  },
+  {
+    "id": "AR-11",
+    "group": "AR",
+    "priority": "P1",
+    "split": "development",
+    "input": {
+      "method": "GET",
+      "path": "/api/places?district=Tây Hồ",
+      "payload": null
+    },
+    "expected": {
+      "status": 200
+    }
+  },
+  {
+    "id": "AR-12",
+    "group": "AR",
+    "priority": "P1",
+    "split": "holdout",
+    "input": {
+      "method": "POST",
+      "path": "/api/sessions",
+      "payload": null
+    },
+    "expected": {
+      "status": 201
+    }
+  },
+  {
+    "id": "AR-13",
+    "group": "AR",
+    "priority": "P1",
+    "split": "development",
+    "input": {
+      "method": "DELETE",
+      "path": "/api/sessions/eval",
+      "payload": null
+    },
+    "expected": {
+      "status": 200
+    }
+  },
+  {
+    "id": "AR-14",
+    "group": "AR",
+    "priority": "P1",
+    "split": "development",
+    "input": {
+      "method": "GET",
+      "path": "/api/health",
+      "payload": null
+    },
+    "expected": {
+      "status": 200
+    }
+  },
+  {
+    "id": "AR-15",
+    "group": "AR",
+    "priority": "P1",
+    "split": "development",
+    "input": {
+      "method": "POST",
+      "path": "/api/chat",
+      "payload": {
+        "message": "Cafe",
+        "simulate_index_down": true
+      }
+    },
+    "expected": {
+      "status": 503
+    }
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "places": [
+    {"id":"test_cafe","name":"Quán mẫu A","category":"Quán nước","category_code":"ca-phe","district":"Cầu Giấy","address":"Quận Cầu Giấy, Hà Nội","opening_hours":"Theo lịch hoạt động","price_range":"30.000–60.000đ / ly","suitable_for":"Học tập","weather_fit":"Trong nhà","description":"Không gian yên tĩnh.","latitude":21.03,"longitude":105.79,"tags":["yên tĩnh","học tập"]},
+    {"id":"test_conflict","name":"Quán ăn phố Chùa mẫu","category":"Quán ăn","category_code":"tam-linh","district":"Cầu Giấy","address":"Khu vực mẫu, Cầu Giấy","opening_hours":"","price_range":"Miễn phí tham quan bên ngoài","suitable_for":"","weather_fit":"","description":"","latitude":null,"longitude":null,"tags":[]}
+  ],
+  "invalid_generation_ids": ["test_outside_retrieval"],
+  "conversation": [
+    {"message":"Cafe học bài ở Cầu Giấy dưới 50k","values":{"category":"ca-phe","location":"Cầu Giấy","budget_max":50000,"preferences":["study"]},"clear_fields":[]},
+    {"message":"Yên tĩnh hơn","values":{"preferences":["study","quiet"]},"clear_fields":[]},
+    {"message":"Chuyển sang Tây Hồ","values":{"location":"Tây Hồ"},"clear_fields":[]},
+    {"message":"Không giới hạn giá nữa","values":{},"clear_fields":["budget_max","budget_unit"]}
+  ]
+}

@@ -1,0 +1,28 @@
+# Python & Virtual Environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Model Caches, Vector Store & Local Artifacts
+project/bot/model_cache/
+project/bot/onnx_model/
+project/bot/chroma_db/
+chroma_db/
+artifacts/
+
+# Local Environment & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE & OS Files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*~

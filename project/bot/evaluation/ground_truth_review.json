@@ -1,0 +1,275 @@
+{
+  "specification": "Provisional mapping from available requirements. The canonical 120-row specification was not present.",
+  "retrieval": [
+    {
+      "id": "RT-01",
+      "query": "Tìm Nhà tù Hỏa Lò",
+      "source_evidence": {
+        "id": "hn_loc_1417",
+        "name": "Nhà tù Hỏa Lò",
+        "district": "Hoàn Kiếm",
+        "category_code": "di-tich"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": true,
+      "annotations": null
+    },
+    {
+      "id": "RT-02",
+      "query": "Tìm Văn Miếu Quốc Tử Giám",
+      "source_evidence": {
+        "id": "hn_loc_1400",
+        "name": "Văn Miếu - Quốc Tử Giám",
+        "district": "Đống Đa",
+        "category_code": "tam-linh"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": true,
+      "annotations": null
+    },
+    {
+      "id": "RT-03",
+      "query": "Tìm Bảo tàng Dân tộc học Việt Nam",
+      "source_evidence": {
+        "id": "hn_loc_1420",
+        "name": "Bảo tàng Dân tộc học Việt Nam",
+        "district": "Cầu Giấy",
+        "category_code": "di-tich"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": true,
+      "annotations": null
+    },
+    {
+      "id": "RT-04",
+      "query": "Phở Gia Truyền Bát Đàn",
+      "source_evidence": {
+        "id": "hn_loc_1009",
+        "name": "Phở Gia Truyền - Bát Đàn",
+        "district": "Hoàn Kiếm",
+        "category_code": "an-uong"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": true,
+      "annotations": null
+    },
+    {
+      "id": "RT-05",
+      "query": "Quán Cháo Gà Bà Mỹ",
+      "source_evidence": {
+        "id": "hn_loc_955",
+        "name": "Bà Mỹ - Quán Cháo Gà",
+        "district": "Hoàn Kiếm",
+        "category_code": "an-uong"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": true,
+      "annotations": null
+    },
+    {
+      "id": "RT-06",
+      "query": "Cháo Sườn Cô Là",
+      "source_evidence": {
+        "id": "hn_loc_976",
+        "name": "Cháo Sườn Cô Là",
+        "district": "Hoàn Kiếm",
+        "category_code": "an-uong"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": true,
+      "annotations": null
+    },
+    {
+      "id": "RT-07",
+      "query": "Cháo lòng 88 Thuốc Bắc",
+      "source_evidence": {
+        "id": "hn_loc_974",
+        "name": "Cháo lòng và Bún đậu 88 Thuốc Bắc",
+        "district": "Hoàn Kiếm",
+        "category_code": "an-uong"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": false,
+      "annotations": null
+    },
+    {
+      "id": "RT-08",
+      "query": "Quán cháo lòng và bún đậu phố Thuốc Bắc",
+      "source_evidence": {
+        "id": "hn_loc_972",
+        "name": "Cháo Lòng & Bún Đậu - Thuốc Bắc",
+        "district": "Hoàn Kiếm",
+        "category_code": "an-uong"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": false,
+      "annotations": null
+    },
+    {
+      "id": "RT-09",
+      "query": "Lẩu Đức Trọc Dịch Vọng Hậu",
+      "source_evidence": {
+        "id": "hn_loc_304",
+        "name": "Lẩu Đức Trọc Dịch Vọng Hậu",
+        "district": "Cầu Giấy",
+        "category_code": "an-uong"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": true,
+      "annotations": null
+    },
+    {
+      "id": "RT-10",
+      "query": "Tìm Lẩu Đức Trọc ở Long Biên có lẩu cháo chim",
+      "source_evidence": {
+        "id": "hn_loc_1134",
+        "name": "Lẩu Đức Trọc Long Biên - Hệ thống lẩu cháo chim nổi tiếng nức lòng thực khách",
+        "district": "Long Biên",
+        "category_code": "an-uong"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": false,
+      "annotations": null
+    },
+    {
+      "id": "RT-11",
+      "query": "Đi dạo ở Hồ Bảy Mẫu",
+      "source_evidence": {
+        "id": "hn_loc_1557",
+        "name": "Hồ Bảy Mẫu",
+        "district": "Hai Bà Trưng",
+        "category_code": "ngoai-troi"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": false,
+      "annotations": null
+    },
+    {
+      "id": "RT-12",
+      "query": "Rạp Beta Cinemas Thanh Xuân",
+      "source_evidence": {
+        "id": "hn_loc_1562",
+        "name": "Khu vui chơi & Rạp chiếu phim Beta Cinemas Thanh Xuân",
+        "district": "Thanh Xuân",
+        "category_code": "giai-tri"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": true,
+      "annotations": null
+    },
+    {
+      "id": "RT-13",
+      "query": "Cơ sở giam giữ Hỏa Lò",
+      "source_evidence": {
+        "id": "hn_loc_1417",
+        "name": "Nhà tù Hỏa Lò",
+        "district": "Hoàn Kiếm",
+        "category_code": "di-tich"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": true,
+      "annotations": null
+    },
+    {
+      "id": "RT-14",
+      "query": "Thăm Quốc Tử Giám",
+      "source_evidence": {
+        "id": "hn_loc_1400",
+        "name": "Văn Miếu - Quốc Tử Giám",
+        "district": "Đống Đa",
+        "category_code": "tam-linh"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": true,
+      "annotations": null
+    },
+    {
+      "id": "RT-15",
+      "query": "Đi xem trưng bày dân tộc học",
+      "source_evidence": {
+        "id": "hn_loc_1420",
+        "name": "Bảo tàng Dân tộc học Việt Nam",
+        "district": "Cầu Giấy",
+        "category_code": "di-tich"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": false,
+      "annotations": null
+    },
+    {
+      "id": "RT-16",
+      "query": "Ăn cháo gà ở quán Bà Mỹ",
+      "source_evidence": {
+        "id": "hn_loc_955",
+        "name": "Bà Mỹ - Quán Cháo Gà",
+        "district": "Hoàn Kiếm",
+        "category_code": "an-uong"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": true,
+      "annotations": null
+    },
+    {
+      "id": "RT-17",
+      "query": "Mua cháo sườn chỗ cô Là",
+      "source_evidence": {
+        "id": "hn_loc_976",
+        "name": "Cháo Sườn Cô Là",
+        "district": "Hoàn Kiếm",
+        "category_code": "an-uong"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": true,
+      "annotations": null
+    },
+    {
+      "id": "RT-18",
+      "query": "Xem phim tại rạp Beta",
+      "source_evidence": {
+        "id": "hn_loc_1562",
+        "name": "Khu vui chơi & Rạp chiếu phim Beta Cinemas Thanh Xuân",
+        "district": "Thanh Xuân",
+        "category_code": "giai-tri"
+      },
+      "status": "source_name_verified",
+      "complete_for_named_target_only": false,
+      "annotations": null
+    },
+    {
+      "id": "RT-19",
+      "query": "Quán ăn ở Cầu Giấy",
+      "source_evidence": null,
+      "status": "human_review",
+      "complete_for_named_target_only": false,
+      "annotations": null
+    },
+    {
+      "id": "RT-20",
+      "query": "Không có quán món zzzqax tại Hà Nội",
+      "source_evidence": null,
+      "status": "no_match",
+      "complete_for_named_target_only": false,
+      "annotations": null
+    }
+  ],
+  "generation": [
+    {
+      "id": "GG-13",
+      "run_reference": null,
+      "annotations": null,
+      "status": "pending_human_review"
+    },
+    {
+      "id": "GG-14",
+      "run_reference": null,
+      "annotations": null,
+      "status": "pending_human_review"
+    },
+    {
+      "id": "GG-15",
+      "run_reference": null,
+      "annotations": null,
+      "status": "pending_human_review"
+    }
+  ]
+}
